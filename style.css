@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Young+Serif&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+.container{
+    /* border:1px solid black; */
+    width:95%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.hex-colors{
+    /* border:2px solid red; */
+    text-align:center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform:uppercase;
+    animation:changecolor 5s infinite alternate;
+}
+.hex-colors h3{
+    /* border:1px solid black; */
+    font-size:2rem;
+    margin-top:20%;
+
+}
+@keyframes changecolor{
+    0%{
+        color:red;
+    }
+    20%{
+        color:blue;
+    }
+    40%{
+        color:pink;
+    }
+    60%{
+        color:violet;
+    }
+    80%{
+        color:yellow;
+    }
+    100%{
+        color:aqua;
+    }
+}
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size:1.5rem;
+    }
+    .hex-colors h2{
+        font-size:1.5rem;
+    }
+}
